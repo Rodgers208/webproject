@@ -1,0 +1,482 @@
+<!-- ========== Start Section ========== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+
+   <link rel="stylesheet" href=".\\home.html">
+   <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
+    <title>Document</title>
+</head>
+<style>
+/* 
+main section */
+.main{
+    background: url(./the\ main.jpg)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:95vh ;
+
+}
+.main h3{
+    font-size: 4.4rem;
+    font-weight:700 ;
+}
+.main h6{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height:1 ;
+    border-bottom: 3px solid rgb(233, 20, 109);
+    width:50% ;
+
+}
+.main .bt1{
+    height: 55px;
+    width: 138px;
+    background-color:rgb(233, 20, 109) ;
+    color:white ;
+    outline:none ;
+    border:none ;
+    font-weight: bold;
+    border-radius:5px ;
+
+}
+.main .bt1{
+    height: 55px;
+    width: 138px;
+    background-color:rgb(233, 20, 109) ;
+    color:white ;
+    outline:none ;
+    border:none ;
+    font-weight: bold;
+    border-radius:5px ;
+
+}
+.main .bt2{
+    height: 55px;
+    width: 138px;
+    background-color: transparent;
+    color:rgb(233, 20, 109) ;
+    outline:none ;
+    border:1px solid rgb(233, 20, 19) ;
+    font-weight: bold;
+    border-radius:5px ;
+
+
+}
+.main .bt1:hover{
+    background-color: rgb(202, 18, 95);
+    transition:0.5s ;
+}
+.main .bt2:hover{
+    background-color: rgb(233, 20, 109);
+    transition:0.5s ;
+    color: white;
+}
+.about img{
+  -webkit-box-shadow: 10px 4px 0px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 4px 0px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 4px 0px 0px rgba(0,0,0,0.75);
+}
+h1{
+  font-size:3rem ;
+  font-weight:900 ;
+}
+.progress{
+  background-color:rgb(233, 219, 219) ;
+  justify-content:flex-start ;
+  border-radius: 50px;
+  align-items:center ;
+  position:relative ;
+  display: flex;
+  height: 25px;
+  width: 100%;
+}
+.progress-value1{
+  animation: load1 3s normal forwards;
+  border-radius:50px ;
+  background-color: black;
+  height: 25px;
+  width: 0;
+
+
+}
+.progress p{
+  color: white;
+  padding: 12px;
+
+}
+.progress-value2{
+  animation: load2 3s normal forwards;
+  border-radius:50px ;
+  background-color: black;
+  height: 25px;
+  width: 0;
+
+
+}
+.progress-value3{
+  animation: load3 3s normal forwards;
+  border-radius:50px ;
+  background-color: black;
+  height: 25px;
+  width: 0;
+
+
+}
+.progress-value4{
+  animation: load4 3s normal forwards;
+  border-radius:50px ;
+  background-color: black;
+  height: 25px;
+  width: 0;
+
+
+}
+
+@keyframes load1{
+  0%{
+    width: 0;
+
+  }
+  100%{
+    width: 98%;
+
+  }
+
+}
+@keyframes load2{
+  0%{
+    width: 0;
+
+  }
+  100%{
+    width: 70%;
+
+  }
+
+}
+@keyframes load3{
+  0%{
+    width: 0;
+
+  }
+  100%{
+    width: 98%;
+
+  }
+
+}
+
+
+@keyframes load4{
+  0%{
+    width: 0;
+
+  }
+  100%{
+    width: 65%;
+
+  }
+
+}
+.btn1{
+  height: 40px;
+  width: 145px;
+  outline: none;
+  border: none;background-color: black;
+  color: white;
+  border-radius: 4px;
+}
+.btn1:hover{
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  transition: 0.5s;
+
+
+}
+.btn2{
+  height: 40px;
+  width: 145px;
+  outline: none;
+  border:1px solid black;background-color:transparent;
+  color: black;
+  border-radius: 4px;
+}
+.btn2:hover{
+  background-color: black;
+  color:white;
+  border: none;
+  transition: 0.5s;
+
+
+}
+.card{
+  border:none;
+  outlone:none;
+  -webkit-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+.card p{
+  color: grey;
+}
+.circle{
+  height:70px ;
+  width: 70px;
+  background-color: lightgrey;
+  color: black;
+  padding: 12px;
+  display: inline-block;
+  margin-bottom:20px ;
+  font-size: 30px;
+  border-radius: 50%;
+
+}
+.card:hover .circle{
+  background-color: black;
+  color: wheat;
+  transition: 0.5s;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">RODGERS</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-right">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="my site.html" style="#c200ff">Home</a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="Portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Blog.html">Blog</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <!-- section starts here -->
+     <section class="main py-5" >
+        <div class="container py-5">
+<div class="row py-5">
+    <div class="col-lg-6 py-5 mr-auto ">
+        <h3><small>Hello,I am</small><br>
+            RODGERS
+        </h3>
+        <h6 class="pt-3">PRO WEB-DEVELOPER </h6>
+        <input type="button" value="My Work" class="bt1 mt-5 mt-5 mr-3" >
+        <input type="button" value="Hire Me" class="bt2 mt-5">
+    </div>
+</div>
+        </div>
+     </section>
+
+     <!-- the start of other section -->
+      <section class="about py-5">
+        <div class="container py-5">
+          <div class="row py-5">
+            <div class="col-lg-5">
+              <img src="./rodgers2.jpg"  class="img-fluid" alt="">
+
+            </div>
+            <div class="col-lg-7">
+              <h1>About Me</h1>
+              <p>WEB DEVELOPER AND CYBERSECURITY EXPERT</p>
+              <P class="py-3"> I’m <span class="font-weight-bold"> <b>Rodgers Onyango</b></span>, passionate about the tech world, specializing in web development and cybersecurity. With hands-on experience in creating responsive websites and securing digital environments, I focus on delivering innovative, user-friendly solutions while ensuring strong protection against cyber threats. Always eager to learn and adapt to new technologies, I strive to stay ahead of industry trends. My goal is to provide high-quality work that not only meets but exceeds expectations in both web development and cybersecurity.
+
+              </P>
+              <div class="progress my-3">
+                <div class="progress-value1">
+                  <p>HTML/ CSS <span class="text-white float-right">95%</span></p>
+                </div>
+
+                
+              
+
+
+
+
+            </div>
+            <div class="progress my-3">
+              <div class="progress-value2">
+                <p>PHP/ MYSQL <span class="text-white float-right">70%</span></p>
+
+              </div>
+              
+          </div>
+          <div class="progress my-3">
+            <div class="progress-value3">
+              <p>BOOTSTRAP<span class="text-white float-right">98%</span></p>
+            </div>
+        </div>
+        <div class="progress my-3">
+          <div class="progress-value4">
+            <p>JAVASCRIPT/JQUERY <span class="text-white float-right">65%</span></p>
+          </div>
+
+          
+
+        
+
+
+
+
+        </div>
+        <input type="button" class="btn1 mt-5" value="Download C.V" py-5>
+          <input type="button" class="btn2 mt-5" value="Contact Us" py-5>
+
+
+
+      </div>
+    </div>
+
+            
+        
+      </section>
+
+<section class="services py-5 pb-light">
+  <div class="container py-5">
+    <h1 class="text-center pb-5"> Services</h1>
+    <div class="row pb-3">
+      <div class="col-lg-4 mb-3">
+        
+        <div class="card text-center py-3">
+          <div class="card-body">
+            <div class="circle">
+              <span><i class="fas fa-desktop" ></i></span>
+            </div>
+            <h4 class="font-weight-bold pb-2">Web Design</h4>
+            <p>"I'm a web designer skilled in creating responsive, user-friendly websites using HTML, CSS, JavaScript, and modern design tools. I focus on intuitive interfaces, clean layouts, and optimized performance to deliver seamless digital experiences."</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 mb-3">
+        
+        <div class="card text-center py-3">
+          <div class="card-body">
+            <div class="circle">
+              <span><i class="fas fa-desktop" ></i></span>
+            </div>
+            <h4 class="font-weight-bold pb-2">Web Design</h4>
+            <p>"I'm a web designer skilled in creating responsive, user-friendly websites using HTML, CSS, JavaScript, and modern design tools. I focus on intuitive interfaces, clean layouts, and optimized performance to deliver seamless digital experiences."</p>
+          </div>
+        </div>
+        <div class="row">
+
+
+          
+        </div>
+      </div>
+
+
+
+
+
+      <div class="col-lg-4 mb-3">
+        
+        <div class="card text-center py-3">
+          <div class="card-body">
+            <div class="circle">
+              <span><i class="fas fa-desktop" ></i></span>
+            </div>
+            <h4 class="font-weight-bold pb-2">Web Design</h4>
+            <p>"I'm a web designer skilled in creating responsive, user-friendly websites using HTML, CSS, JavaScript, and modern design tools. I focus on intuitive interfaces, clean layouts, and optimized performance to deliver seamless digital experiences."</p>
+          </div>
+        </div>
+      </div>
+
+
+      
+
+
+      
+
+    </div>
+
+
+    
+    
+  </div>
+
+  
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" ></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- ========== End Section ========== -->
