@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>singleitem</title>
+    <!-- bootstarp and js  -->
+    <link rel="stylesheet" href="../static/files/css/bootstrap.min.css">
+    <script src="../static/files/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- include navbar  -->
+    {%include 'navbar.html'%}
+    <sectiom class="row">
+        <div class="col-md-4">
+            <img src="../static/images/{{product[5]}}" alt="" class="img-thumbnail shadow p-4" width="300" height="300">
+            <br><br>
+            <h3>{{product[1]}}</h3>
+
+
+
+        </div>
+        <div class="col-md-8">
+            <p class="text-muted">
+                {{product[2]}}
+            </p>
+            <h4>
+                KES{{product[3]}}
+            </h4>
+            <b class="text-danger">
+                category:{{product[4]}}
+            </b>
+        </div>
+    </section>
+    <section class="row">
+
+        <div class="col-md-6">
+            <form action="/login" method="post" >
+                <input type="text" name="username" id="" placeholder="Enter name" required  class="form-control">
+                <br>
+               
+                
+                <input type="password" name="password" id="" placeholder="Enter password" required  class="form-control">
+                <br>
+                
+                
+        
+                
+        <input type="submit" value="login" class="btn btn-primary">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            </form>
+
+
+        </div>
+    </section>
+    
+    </div>
+
+    
+</body>
+</html>

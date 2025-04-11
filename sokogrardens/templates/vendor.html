@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vendors</title>
+
+    <link rel="stylesheet" href="..//static/files/css/bootstrap.css">
+</head>
+<body >
+      {% include 'navbar.html' %} 
+
+    <div class="container">
+        <section class="row">
+            <div class="col-md-6">
+
+
+  
+    
+<h2 class="text-primary">create vendor  account</h2>
+
+<form action="/vendor" method="post" >
+    <input type="text" name="firstname" id="" placeholder="Your first Name" required class="form-control">
+    <br>
+    <input type="text" name="lastname" id="" placeholder="your lastname" required class="form-control">
+    <br>
+    <input type="text" name="county" id="" placeholder="your county" required class="form-control">
+    <br>
+    <input type="password" name="password1" id="" required placeholder="your password" class="form-control" >
+    <br>
+    <input type="password" name="password2" id="" required placeholder="confirm your password" class="form-control" >
+    <br>
+    <input type="email" name="email" id="" placeholder="Your Email" required class="form-control">
+    <br>
+    <input type="submit" value=" add vendor" class="btn btn-primary " style="color: white;" >
+
+</form>
+<br>
+
+
+          </div>
+        </section>
+<b class="text-success">{{success}}</b>
+<b class="text-danger">{{error}}</b>
+    </div>
+
+</body>
+</html>

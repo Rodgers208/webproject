@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- css supporting files  -->
+    <link rel="stylesheet" href="../static/files/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/files/css/lightslider.css">
+    <link rel="stylesheet" href="../static/files/css/style.css">
+
+    <!-- js supporyting  files  -->
+    <script src="../static/files/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/files/js/jquery.js"></script>
+    <script src="../static/files/js/lightslider.js"></script>
+ <script src="../static/files/js/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+  <div class="container-fluid">
+
+  <!-- link navbar  -->
+  <!-- we include using jinja2 template -->
+  {% include 'navbar.html' %}
+
+  {% include 'carousel.html' %}
+
+
+  <br>
+  <h1 class="bg-warning"> INTRODUCTION</h1>
+  <section class="slider p-4">
+    <ul class="cs-hidden autoWidth">
+    {% for item in electronic%}
+      <li>
+        <div class="box">
+          <div class="slide-img">
+            <img src="../static/images/{{item[5]}}" alt="" width="50" height="50">
+            <div class="overlay">
+              <a href="/singleitem/{{item[0]}}" class="buy-btn"> Buy Now</a>
+            </div>
+          </div>
+          <div class="detail-box">
+            {{item[1]}} Buy Now <br>
+            <b class="text-warning"> KES{{item[3]}} Buy Now</b>
+          </div>
+        </div>
+        
+      </li>
+    {%endfor %}
+
+
+
+    </ul>
+
+
+
+  </section>
+  <br>
+  <h1 class="bg-warning">FURNITURE</h1>
+  
+    <ul class="cs-hidden autoWidth">
+    {% for item in furniture%}
+      <li>
+        <div class="box">
+          <div class="slide-img">
+            <img src="../static/images/{{item[5]}}" alt="" width="50" height="50">
+            <div class="overlay">
+              <a href="/singleitem/{{item[0]}}" class="buy-btn"> Buy Now </a>
+            </div>
+          </div>
+          <div class="detail-box">
+            {{item[1]}}  Buy Now<br>
+            <b class="text-warning"> KES Buy Now{{item[3]}} Buy Now</b>
+          </div>
+        </div>
+        
+      </li>
+    {%endfor %}
+
+
+
+    </ul>
+
+
+
+  </section>
+  <br>
+  <h1 class="bg-warning"> PHONES</h1>
+  
+    <ul class="cs-hidden autoWidth">
+    {% for item in phones%}
+      <li>
+        <div class="box">
+          <div class="slide-img">
+            <img src="../static/images/{{item[5]}}" alt="" width="50" height="50">
+            <div class="overlay">
+              <a href="/singleitem/{{item[0]}}" class="buy-btn"> Buy Now </a>
+            </div>
+          </div>
+          <div class="detail-box ">
+            {{item[1]}} Buy Now <br>
+            <b class="text-warning"> KES Buy nows{{item[3]}} Buy Now</b>
+          </div>
+        </div>
+        
+      </li>
+    {%endfor %}
+
+
+
+    </ul>
+
+
+
+  </section>
+  {%include 'footer.html'%}
+
+
+
+
+  </div>
+</body>
+</html>
